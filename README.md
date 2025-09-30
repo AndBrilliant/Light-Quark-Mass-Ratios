@@ -20,8 +20,14 @@ These dimensionless relationships reduce the three light quark masses (u, d, s) 
 
 ## Usage
 
+### Validate relationships at μ = 2 GeV
 ```bash
 python3 light_quark_prover.py
+```
+
+### Verify scale invariance across energies
+```bash
+python3 scale_invariance_test.py
 ```
 
 ### Requirements
@@ -31,10 +37,15 @@ python3 light_quark_prover.py
 
 ### Output
 
-The script validates:
+**light_quark_prover.py** validates:
 - Scale-invariant relation: 2(m_d/m_u)³ = m_s/m_d
 - Individual ratio constraints
 - Statistical significance of deviations
+
+**scale_invariance_test.py** demonstrates:
+- Relationship holds across 0.5 GeV to 1 TeV
+- Deviations <10⁻⁵ at all energy scales
+- QCD RG evolution preserves the ratios
 
 ## Data Sources
 
